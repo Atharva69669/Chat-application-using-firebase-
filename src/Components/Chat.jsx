@@ -24,7 +24,7 @@ const Chat = ({ room }) => {
     });
 
     return () => flush();
-  }, []);
+  }, [messagesRef,room]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
